@@ -3,7 +3,7 @@ import axios from 'axios'; // 🎯 Network Bridge API call ke liye
 import './BookingForm.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://rose-salon-backend.onrender.com/api";
 
 const BookingForm = () => {
   // 🎯 Form variables ko backend schema (name, number) ke sath exact match kar diya

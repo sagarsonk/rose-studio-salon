@@ -8,7 +8,7 @@ import ManageHome from './ManageHome';
 import ManageBookings from './ManageBookings'; // 🎯 Import Naya Component
 import { FaThLarge, FaCut, FaShoppingBag, FaCalendarCheck, FaSignOutAlt, FaHome, FaAddressCard } from 'react-icons/fa';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://rose-salon-backend.onrender.com/api";
 
 const DashboardShell = ({ onLogout }) => {
   const [activeTab, setActiveTab] = useState('overview');

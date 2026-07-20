@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaCalendarCheck, FaTrashAlt, FaCheckCircle } from 'react-icons/fa';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://rose-salon-backend.onrender.com/api";
 
 const ManageBookings = ({ onRefreshCount }) => {
   const [bookings, setBookings] = useState([]);
