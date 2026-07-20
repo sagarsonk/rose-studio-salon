@@ -1,0 +1,104 @@
+.pure-image-slider-viewport {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slider-frame-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* WINDOW WINDOW TRACK */
+.slider-window-track {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  background-color: #faf7f7;
+}
+
+.slider-cards-flexbox {
+  display: flex;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
+}
+
+/* IMAGE WORKSPACE CONTAINER */
+.slider-individual-image-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 450px; /* Aap apne hisab se height adjustable rakh sakte ho */
+  overflow: hidden;
+  display: flex;
+}
+
+.slider-individual-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* LUXURY MINIMALIST DIRECTIONAL CONTROLS */
+.slider-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ebdada;
+  color: #1a1a1a;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.2s ease;
+}
+
+.slider-arrow-btn:hover {
+  background-color: #d63384;
+  color: #ffffff;
+  border-color: #d63384;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);
+}
+
+.left-arrow { left: -22px; }
+.right-arrow { right: -22px; }
+
+/* PAGINATION DOTS CONFIG */
+.slider-pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.pagination-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #ebdada;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot-active {
+  background-color: #d63384;
+  width: 20px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .slider-individual-image-card { height: 260px; }
+  .left-arrow { left: -10px; }
+  .right-arrow { right: -10px; }
+}

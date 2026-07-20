@@ -1,0 +1,47 @@
+.gallery-section{
+    padding:90px 8%;
+    background:#FFF8FA;
+}
+
+.gallery-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.gallery-heading span{
+    color:#E91E63;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.gallery-heading h2{
+    font-size:46px;
+    margin:15px 0;
+    font-family:"Playfair Display",serif;
+}
+
+.gallery-heading p{
+    color:#666;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-card{
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.gallery-card img{
+    width:90%;
+    height:200px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.08);
+}

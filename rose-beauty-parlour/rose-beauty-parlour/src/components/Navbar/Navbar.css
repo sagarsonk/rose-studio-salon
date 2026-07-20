@@ -1,0 +1,128 @@
+/* ELITE GLASSMORPHIC STICKY NAVBAR */
+.premium-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  backdrop-filter: blur(12px); /* Blurred backdrop glass effect */
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 18px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BRAND LOGO DESIGN */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+}
+
+.logo-icon-sparkle {
+  color: #d63384; /* Salon accent pink */
+  font-size: 24px;
+  transition: transform 0.4s ease;
+}
+
+.navbar-logo:hover .logo-icon-sparkle {
+  transform: rotate(15px) scale(1.1);
+}
+
+.logo-brand-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+/* LUXURY NAVIGATION LINKS W/ UNDERLINE SLIDE ANIMATION */
+.nav-links-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 35px; /* Perfect desktop link padding */
+}
+
+.nav-link-item {
+  text-decoration: none !important;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover & Active text styles */
+.nav-link-item:hover,
+.nav-link-item.active {
+  color: #d63384;
+}
+
+/* Premium micro-interaction underline animation */
+.nav-link-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d63384;
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link-item:hover::after,
+.nav-link-item.active::after {
+  width: 100%;
+}
+
+/* CALL TO ACTION 'BOOK NOW' BUTTON SETTINGS */
+.navbar-book-btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 26px;
+  border-radius: 50px; /* Perfectly round elegant container pill shape */
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-book-btn:hover {
+  background-color: #d63384;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(214, 51, 132, 0.2);
+}
+
+/* RESPONSIVE LAYOUT CONSTRAINTS FOR MOBILE PLATFORMS */
+@media (max-width: 768px) {
+  .navbar-nav-menu {
+    display: none; /* Hide default center menu on mobile to protect layout breaks */
+  }
+  .logo-brand-text {
+    font-size: 18px;
+  }
+  .navbar-book-btn {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+}

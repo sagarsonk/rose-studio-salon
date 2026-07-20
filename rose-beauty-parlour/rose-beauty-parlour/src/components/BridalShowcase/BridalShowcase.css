@@ -1,0 +1,63 @@
+.bridal-luxury-showcase-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.bridal-text-branding span {
+  font-size: 13px;
+  color: #d63384;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bridal-text-branding h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #1a1a1a;
+  margin: 10px 0 20px 0;
+}
+
+.subtle-divider-line {
+  width: 60px;
+  height: 2px;
+  background-color: #ebdada;
+  margin: 0 auto 40px auto;
+}
+
+/* CINEMATIC THEATER FRAME */
+.video-cinematic-frame {
+  width: 100%;
+  height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(214, 51, 132, 0.05);
+  background-color: #1a1a1a;
+}
+
+.salon-live-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-placeholder-luxury {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebdada;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+@media (max-width: 768px) {
+  .video-cinematic-frame { height: 300px; }
+  .bridal-text-branding h2 { font-size: 26px; }
+}

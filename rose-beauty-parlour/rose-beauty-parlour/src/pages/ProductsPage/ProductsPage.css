@@ -1,0 +1,195 @@
+.universal-store-page {
+  background-color: #faf6f6; /* Matching premium salon backdrop */
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.store-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header Text Alignments */
+.store-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.store-tag {
+  color: #d63384;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.store-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 8px;
+}
+
+.store-accent-line {
+  width: 50px;
+  height: 2px;
+  background-color: #d63384;
+  margin: 15px auto;
+}
+
+.store-subtitle {
+  color: #6c757d;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Dynamic Grid Framework Configuration */
+.store-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns on standard screen dimensions */
+  gap: 30px;
+}
+
+/* Card Geometry Look */
+.boutique-product-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boutique-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(214, 51, 132, 0.06);
+}
+
+/* Image Visual Frames */
+.boutique-img-frame {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.boutique-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.boutique-product-card:hover .boutique-img {
+  transform: scale(1.05);
+}
+
+/* Premium Labels & Badges */
+.boutique-card-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 5;
+  text-transform: uppercase;
+}
+
+/* Text Meta Block Elements */
+.boutique-info-block {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.boutique-prod-category {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.boutique-prod-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.boutique-prod-desc {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Pushes content clean down */
+}
+
+/* Card footer meta block design setup */
+.boutique-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid #f1f3f5;
+  padding-top: 15px;
+}
+
+.boutique-prod-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d63384;
+}
+
+/* Clean Button Style Setup */
+.btn-boutique-buy {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-boutique-buy:hover {
+  background-color: #d63384;
+}
+
+/* Media Screen Breaks for grid resizing */
+@media (max-width: 992px) {
+  .store-grid-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .store-grid-wrapper {
+    grid-template-columns: 1fr; /* Full width 1 card stretch on mobile devices */
+  }
+  .store-title {
+    font-size: 28px;
+  }
+}

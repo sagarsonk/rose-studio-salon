@@ -1,0 +1,80 @@
+.service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(233, 30, 99, 0.15);
+}
+
+.service-image-wrapper {
+  position: relative;
+}
+
+.service-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #e91e63;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-content {
+  padding: 24px;
+}
+
+.service-content h3 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-footer span {
+  color: #888;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-footer button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.service-footer button:hover {
+  background: #c2185b;
+}
